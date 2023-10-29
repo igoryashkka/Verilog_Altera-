@@ -1,0 +1,6 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.0sp1/Verilog/test/test.v
+source_file = 1, C:/altera/13.0sp1/Verilog/test/db/test.cbx.xml
+design_name = test
+instance = comp, \x~I\, x, test, 1
+instance = comp, \y~I\, y, test, 1
