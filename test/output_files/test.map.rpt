@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Mon Oct 30 00:08:16 2023
+Sat Nov 11 15:17:44 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 30 00:08:16 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 11 15:17:44 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; test                                            ;
 ; Top-level Entity Name              ; test                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1                                               ;
-;     Total combinational functions  ; 1                                               ;
+; Total logic elements               ; 2                                               ;
+;     Total combinational functions  ; 2                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 4                                               ;
+; Total pins                         ; 57                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -167,34 +167,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+---------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 1      ;
-;                                             ;        ;
-; Total combinational functions               ; 1      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 1      ;
-;     -- <=2 input functions                  ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 1      ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 4      ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; comb~0 ;
-; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 4      ;
-; Average fan-out                             ; 0.80   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 2     ;
+;                                             ;       ;
+; Total combinational functions               ; 2     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 1     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 2     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 57    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; a     ;
+; Maximum fan-out                             ; 5     ;
+; Total fan-out                               ; 15    ;
+; Average fan-out                             ; 0.25  ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -202,7 +202,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |test                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |test               ; work         ;
+; |test                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |test               ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,21 +237,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 30 00:08:15 2023
+    Info: Processing started: Sat Nov 11 15:17:43 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file test.v
     Info (12023): Found entity 1: test
 Info (12127): Elaborating entity "test" for the top level hierarchy
+Warning (10739): Verilog HDL warning at test.v(27): actual bit length 16 differs from formal bit length 1
+Warning (10034): Output port "y_bus[15..1]" at test.v(2) has no driver
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "y_bus[1]" is stuck at GND
+    Warning (13410): Pin "y_bus[2]" is stuck at GND
+    Warning (13410): Pin "y_bus[3]" is stuck at GND
+    Warning (13410): Pin "y_bus[4]" is stuck at GND
+    Warning (13410): Pin "y_bus[5]" is stuck at GND
+    Warning (13410): Pin "y_bus[6]" is stuck at GND
+    Warning (13410): Pin "y_bus[7]" is stuck at GND
+    Warning (13410): Pin "y_bus[8]" is stuck at GND
+    Warning (13410): Pin "y_bus[9]" is stuck at GND
+    Warning (13410): Pin "y_bus[10]" is stuck at GND
+    Warning (13410): Pin "y_bus[11]" is stuck at GND
+    Warning (13410): Pin "y_bus[12]" is stuck at GND
+    Warning (13410): Pin "y_bus[13]" is stuck at GND
+    Warning (13410): Pin "y_bus[14]" is stuck at GND
+    Warning (13410): Pin "y_bus[15]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4598 megabytes
-    Info: Processing ended: Mon Oct 30 00:08:16 2023
+Warning (21074): Design contains 30 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in_1[1]"
+    Warning (15610): No output dependent on input pin "in_1[2]"
+    Warning (15610): No output dependent on input pin "in_1[3]"
+    Warning (15610): No output dependent on input pin "in_1[4]"
+    Warning (15610): No output dependent on input pin "in_1[5]"
+    Warning (15610): No output dependent on input pin "in_1[6]"
+    Warning (15610): No output dependent on input pin "in_1[7]"
+    Warning (15610): No output dependent on input pin "in_1[8]"
+    Warning (15610): No output dependent on input pin "in_1[9]"
+    Warning (15610): No output dependent on input pin "in_1[10]"
+    Warning (15610): No output dependent on input pin "in_1[11]"
+    Warning (15610): No output dependent on input pin "in_1[12]"
+    Warning (15610): No output dependent on input pin "in_1[13]"
+    Warning (15610): No output dependent on input pin "in_1[14]"
+    Warning (15610): No output dependent on input pin "in_1[15]"
+    Warning (15610): No output dependent on input pin "in_2[1]"
+    Warning (15610): No output dependent on input pin "in_2[2]"
+    Warning (15610): No output dependent on input pin "in_2[3]"
+    Warning (15610): No output dependent on input pin "in_2[4]"
+    Warning (15610): No output dependent on input pin "in_2[5]"
+    Warning (15610): No output dependent on input pin "in_2[6]"
+    Warning (15610): No output dependent on input pin "in_2[7]"
+    Warning (15610): No output dependent on input pin "in_2[8]"
+    Warning (15610): No output dependent on input pin "in_2[9]"
+    Warning (15610): No output dependent on input pin "in_2[10]"
+    Warning (15610): No output dependent on input pin "in_2[11]"
+    Warning (15610): No output dependent on input pin "in_2[12]"
+    Warning (15610): No output dependent on input pin "in_2[13]"
+    Warning (15610): No output dependent on input pin "in_2[14]"
+    Warning (15610): No output dependent on input pin "in_2[15]"
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 2 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4599 megabytes
+    Info: Processing ended: Sat Nov 11 15:17:44 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
