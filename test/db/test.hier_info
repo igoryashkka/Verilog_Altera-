@@ -4,7 +4,12 @@ y_notif0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 y_notif1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 y_bufif0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 y_bufif1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
-y_mx <= Multiplexer:mx.port0
+y_mx_1 <= Multiplexer:mx_1.port0
+y_mx_2 <= Multiplexer:mx_2.y_wire
+y_mxm[0] <= Multiplexer_module:mxm_1[0].y
+y_mxm[1] <= Multiplexer_module:mxm_1[1].y
+y_mxm[2] <= Multiplexer_module:mxm_1[2].y
+y_mxm[3] <= Multiplexer_module:mxm_1[3].y
 y_bus[0] <= and_bus.DB_MAX_OUTPUT_PORT_TYPE
 y_bus[1] <= <GND>
 y_bus[2] <= <GND>
@@ -53,20 +58,72 @@ in_2[12] => ~NO_FANOUT~
 in_2[13] => ~NO_FANOUT~
 in_2[14] => ~NO_FANOUT~
 in_2[15] => ~NO_FANOUT~
-x1 => x1.IN1
-x2 => x2.IN1
-a => a.IN1
+x1 => x1.IN2
+x2 => x2.IN2
+a => a.IN2
 b => comb.OE
 b => comb.OE
 b => comb.OE
 b => comb.OE
+x1_mxm[0] => Multiplexer_module:mxm_1[0].x1
+x1_mxm[1] => Multiplexer_module:mxm_1[1].x1
+x1_mxm[2] => Multiplexer_module:mxm_1[2].x1
+x1_mxm[3] => Multiplexer_module:mxm_1[3].x1
+x2_mxm[0] => Multiplexer_module:mxm_1[0].x2
+x2_mxm[1] => Multiplexer_module:mxm_1[1].x2
+x2_mxm[2] => Multiplexer_module:mxm_1[2].x2
+x2_mxm[3] => Multiplexer_module:mxm_1[3].x2
+a_mxm[0] => Multiplexer_module:mxm_1[0].a
+a_mxm[1] => Multiplexer_module:mxm_1[1].a
+a_mxm[2] => Multiplexer_module:mxm_1[2].a
+a_mxm[3] => Multiplexer_module:mxm_1[3].a
 
 
-|test|Multiplexer:mx
+|test|Multiplexer:mx_1
+y_wire <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a_wire => comb.IN0
+a_wire => comb.IN0
+x1_wire => comb.IN1
+x2_wire => comb.IN1
+
+
+|test|Multiplexer:mx_2
+y_wire <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a_wire => comb.IN0
+a_wire => comb.IN0
+x1_wire => comb.IN1
+x2_wire => comb.IN1
+
+
+|test|Multiplexer_module:mxm_1[0]
 y <= comb.DB_MAX_OUTPUT_PORT_TYPE
-a => comb.IN0
-a => comb.IN0
-x1 => comb.IN1
-x2 => comb.IN1
+a => and2.IN0
+a => and1.IN0
+x1 => and1.IN1
+x2 => and2.IN1
+
+
+|test|Multiplexer_module:mxm_1[1]
+y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a => and2.IN0
+a => and1.IN0
+x1 => and1.IN1
+x2 => and2.IN1
+
+
+|test|Multiplexer_module:mxm_1[2]
+y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a => and2.IN0
+a => and1.IN0
+x1 => and1.IN1
+x2 => and2.IN1
+
+
+|test|Multiplexer_module:mxm_1[3]
+y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a => and2.IN0
+a => and1.IN0
+x1 => and1.IN1
+x2 => and2.IN1
 
 
