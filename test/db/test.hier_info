@@ -4,6 +4,7 @@ y_notif0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 y_notif1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 y_bufif0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 y_bufif1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+y_mx <= Multiplexer:mx.port0
 y_bus[0] <= and_bus.DB_MAX_OUTPUT_PORT_TYPE
 y_bus[1] <= <GND>
 y_bus[2] <= <GND>
@@ -52,17 +53,20 @@ in_2[12] => ~NO_FANOUT~
 in_2[13] => ~NO_FANOUT~
 in_2[14] => ~NO_FANOUT~
 in_2[15] => ~NO_FANOUT~
-x1 => and1.IN0
-x2 => and2.IN0
-a => and2.IN1
-a => comb.DATAIN
-a => comb.DATAIN
-a => and1.IN1
-a => comb.DATAIN
-a => comb.DATAIN
+x1 => x1.IN1
+x2 => x2.IN1
+a => a.IN1
 b => comb.OE
 b => comb.OE
 b => comb.OE
 b => comb.OE
+
+
+|test|Multiplexer:mx
+y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a => comb.IN0
+a => comb.IN0
+x1 => comb.IN1
+x2 => comb.IN1
 
 

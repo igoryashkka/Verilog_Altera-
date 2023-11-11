@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "test")
-  (DATE "11/11/2023 15:17:56")
+  (DATE "11/11/2023 21:32:38")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -36,7 +36,7 @@
     (INSTANCE \\a\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (873:873:873) (873:873:873))
+        (IOPATH padio combout (833:833:833) (833:833:833))
       )
     )
   )
@@ -45,7 +45,7 @@
     (INSTANCE \\b\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (844:844:844) (844:844:844))
+        (IOPATH padio combout (873:873:873) (873:873:873))
       )
     )
   )
@@ -54,7 +54,7 @@
     (INSTANCE \\x1\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (884:884:884) (884:884:884))
+        (IOPATH padio combout (833:833:833) (833:833:833))
       )
     )
   )
@@ -63,7 +63,7 @@
     (INSTANCE \\x2\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (874:874:874) (874:874:874))
+        (IOPATH padio combout (843:843:843) (843:843:843))
       )
     )
   )
@@ -72,12 +72,12 @@
     (INSTANCE \\comb\~0\\)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (5571:5571:5571) (5571:5571:5571))
-        (PORT datac (4839:4839:4839) (4839:4839:4839))
-        (PORT datad (4843:4843:4843) (4843:4843:4843))
-        (IOPATH dataa combout (513:513:513) (513:513:513))
-        (IOPATH datac combout (319:319:319) (319:319:319))
-        (IOPATH datad combout (178:178:178) (178:178:178))
+        (PORT dataa (5233:5233:5233) (5233:5233:5233))
+        (PORT datab (5218:5218:5218) (5218:5218:5218))
+        (PORT datac (5495:5495:5495) (5495:5495:5495))
+        (IOPATH dataa combout (544:544:544) (544:544:544))
+        (IOPATH datab combout (521:521:521) (521:521:521))
+        (IOPATH datac combout (322:322:322) (322:322:322))
       )
     )
   )
@@ -86,7 +86,7 @@
     (INSTANCE \\in_2\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (864:864:864) (864:864:864))
+        (IOPATH padio combout (884:884:884) (884:884:884))
       )
     )
   )
@@ -95,7 +95,7 @@
     (INSTANCE \\in_1\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (844:844:844) (844:844:844))
+        (IOPATH padio combout (854:854:854) (854:854:854))
       )
     )
   )
@@ -104,8 +104,8 @@
     (INSTANCE and_bus)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (4861:4861:4861) (4861:4861:4861))
-        (PORT datad (4846:4846:4846) (4846:4846:4846))
+        (PORT dataa (4802:4802:4802) (4802:4802:4802))
+        (PORT datad (4832:4832:4832) (4832:4832:4832))
         (IOPATH dataa combout (513:513:513) (513:513:513))
         (IOPATH datad combout (178:178:178) (178:178:178))
       )
@@ -116,9 +116,9 @@
     (INSTANCE \\y_notif0\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5775:5775:5775) (5775:5775:5775))
-        (PORT oe (7538:7538:7538) (7538:7538:7538))
-        (IOPATH datain padio (2996:2996:2996) (2996:2996:2996))
+        (PORT datain (5688:5688:5688) (5688:5688:5688))
+        (PORT oe (8255:8255:8255) (8255:8255:8255))
+        (IOPATH datain padio (2976:2976:2976) (2976:2976:2976))
         (IOPATH (posedge oe) padio (442:442:442) (442:442:442))
       )
     )
@@ -128,9 +128,9 @@
     (INSTANCE \\y_notif1\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5774:5774:5774) (5774:5774:5774))
-        (PORT oe (7837:7837:7837) (7837:7837:7837))
-        (IOPATH datain padio (3016:3016:3016) (3016:3016:3016))
+        (PORT datain (5688:5688:5688) (5688:5688:5688))
+        (PORT oe (8285:8285:8285) (8285:8285:8285))
+        (IOPATH datain padio (3006:3006:3006) (3006:3006:3006))
         (IOPATH (posedge oe) padio (442:442:442) (442:442:442))
       )
     )
@@ -140,9 +140,9 @@
     (INSTANCE \\y_bufif0\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5757:5757:5757) (5757:5757:5757))
-        (PORT oe (7837:7837:7837) (7837:7837:7837))
-        (IOPATH datain padio (3016:3016:3016) (3016:3016:3016))
+        (PORT datain (5656:5656:5656) (5656:5656:5656))
+        (PORT oe (8265:8265:8265) (8265:8265:8265))
+        (IOPATH datain padio (2986:2986:2986) (2986:2986:2986))
         (IOPATH (posedge oe) padio (442:442:442) (442:442:442))
       )
     )
@@ -152,8 +152,8 @@
     (INSTANCE \\y_bufif1\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5775:5775:5775) (5775:5775:5775))
-        (PORT oe (7538:7538:7538) (7538:7538:7538))
+        (PORT datain (5656:5656:5656) (5656:5656:5656))
+        (PORT oe (8275:8275:8275) (8275:8275:8275))
         (IOPATH datain padio (2996:2996:2996) (2996:2996:2996))
         (IOPATH (posedge oe) padio (442:442:442) (442:442:442))
       )
@@ -164,8 +164,18 @@
     (INSTANCE \\y\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (521:521:521) (521:521:521))
-        (IOPATH datain padio (2850:2850:2850) (2850:2850:2850))
+        (PORT datain (679:679:679) (679:679:679))
+        (IOPATH datain padio (2976:2976:2976) (2976:2976:2976))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\y_mx\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (679:679:679) (679:679:679))
+        (IOPATH datain padio (3006:3006:3006) (3006:3006:3006))
       )
     )
   )
@@ -174,7 +184,7 @@
     (INSTANCE \\y_bus\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (521:521:521) (521:521:521))
+        (PORT datain (520:520:520) (520:520:520))
         (IOPATH datain padio (2820:2820:2820) (2820:2820:2820))
       )
     )
@@ -184,7 +194,7 @@
     (INSTANCE \\y_bus\[1\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2986:2986:2986) (2986:2986:2986))
+        (IOPATH datain padio (3006:3006:3006) (3006:3006:3006))
       )
     )
   )
@@ -193,7 +203,7 @@
     (INSTANCE \\y_bus\[2\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2810:2810:2810) (2810:2810:2810))
+        (IOPATH datain padio (2840:2840:2840) (2840:2840:2840))
       )
     )
   )
@@ -202,7 +212,7 @@
     (INSTANCE \\y_bus\[3\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2840:2840:2840) (2840:2840:2840))
+        (IOPATH datain padio (2986:2986:2986) (2986:2986:2986))
       )
     )
   )
@@ -211,7 +221,7 @@
     (INSTANCE \\y_bus\[4\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2840:2840:2840) (2840:2840:2840))
+        (IOPATH datain padio (3016:3016:3016) (3016:3016:3016))
       )
     )
   )
@@ -220,7 +230,7 @@
     (INSTANCE \\y_bus\[5\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2820:2820:2820) (2820:2820:2820))
+        (IOPATH datain padio (2986:2986:2986) (2986:2986:2986))
       )
     )
   )
@@ -229,7 +239,7 @@
     (INSTANCE \\y_bus\[6\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (3006:3006:3006) (3006:3006:3006))
+        (IOPATH datain padio (2830:2830:2830) (2830:2830:2830))
       )
     )
   )
@@ -247,7 +257,7 @@
     (INSTANCE \\y_bus\[8\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (3006:3006:3006) (3006:3006:3006))
+        (IOPATH datain padio (2840:2840:2840) (2840:2840:2840))
       )
     )
   )
@@ -256,7 +266,7 @@
     (INSTANCE \\y_bus\[9\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2986:2986:2986) (2986:2986:2986))
+        (IOPATH datain padio (3016:3016:3016) (3016:3016:3016))
       )
     )
   )
@@ -265,7 +275,7 @@
     (INSTANCE \\y_bus\[10\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2996:2996:2996) (2996:2996:2996))
+        (IOPATH datain padio (2986:2986:2986) (2986:2986:2986))
       )
     )
   )
@@ -274,7 +284,7 @@
     (INSTANCE \\y_bus\[11\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2976:2976:2976) (2976:2976:2976))
+        (IOPATH datain padio (3016:3016:3016) (3016:3016:3016))
       )
     )
   )
@@ -292,7 +302,7 @@
     (INSTANCE \\y_bus\[13\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (3006:3006:3006) (3006:3006:3006))
+        (IOPATH datain padio (2840:2840:2840) (2840:2840:2840))
       )
     )
   )
@@ -301,7 +311,7 @@
     (INSTANCE \\y_bus\[14\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2830:2830:2830) (2830:2830:2830))
+        (IOPATH datain padio (2840:2840:2840) (2840:2840:2840))
       )
     )
   )
@@ -310,7 +320,7 @@
     (INSTANCE \\y_bus\[15\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (2976:2976:2976) (2976:2976:2976))
+        (IOPATH datain padio (2850:2850:2850) (2850:2850:2850))
       )
     )
   )

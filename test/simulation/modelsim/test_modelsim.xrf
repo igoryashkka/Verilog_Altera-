@@ -14,6 +14,7 @@ instance = comp, \y_notif1~I\, y_notif1, test, 1
 instance = comp, \y_bufif0~I\, y_bufif0, test, 1
 instance = comp, \y_bufif1~I\, y_bufif1, test, 1
 instance = comp, \y~I\, y, test, 1
+instance = comp, \y_mx~I\, y_mx, test, 1
 instance = comp, \y_bus[0]~I\, y_bus[0], test, 1
 instance = comp, \y_bus[1]~I\, y_bus[1], test, 1
 instance = comp, \y_bus[2]~I\, y_bus[2], test, 1
