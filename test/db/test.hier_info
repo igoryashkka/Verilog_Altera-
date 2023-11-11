@@ -1,5 +1,8 @@
 |test
-x => y.DATAIN
-y <= x.DB_MAX_OUTPUT_PORT_TYPE
+y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+x1 => and1.IN0
+x2 => and2.IN0
+a => and2.IN1
+a => and1.IN1
 
 
